@@ -46,7 +46,7 @@ void Emulator::flipScreen() {
 void Emulator::loadFromFile(const char* pFileName) {
 	// Screw the filename
 	FILE* pFile;
-	fopen_s(&pFile, "E:\\nestest.nes", "r");
+	fopen_s(&pFile, "nestest.nes", "r");
 	if (pFile) {
 		fseek(pFile, 0, SEEK_END);
 		long lFileSize = ftell(pFile);
